@@ -47,7 +47,6 @@ section > p{
     padding-bottom: 2em;
 }
 
-
  a {
     color: white;
     text-decoration:none;
@@ -88,8 +87,8 @@ section.normal {
    
  }
 #img01{
-background-image: url('../imagens/background001.jpg');
-background-position: right center ;
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center ;
 
 }
 
