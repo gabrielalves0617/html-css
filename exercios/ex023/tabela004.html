@@ -21,7 +21,7 @@
             padding: 10px;
         }
 
-        th, th {
+        td, th {
             border: 1px solid black;
             padding: 10px;
         }
@@ -35,17 +35,59 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th rowspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Series</th>
             </tr>
         </thead>
 
          <tbody>
             <tr>
-                <th>Mulheres</th>
-                <th>Homens</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Kassia Sousa</td>
+                    <td>Friends</td>
+                    <td>Gossip Girl</td>
+                    <td>The Vampire Diaries</td>
             </tr>
+            
+            <tr>
+               <td>Aurora Alves</td>
+               <td>Polpol</td>
+               <td>Patati</td>
+               <td>Patata</td>
+
+            </tr>
+
+            <tr>
+                <td>Graça Alves</td>
+                <td>Rei do Gado</td>
+                <td>Moon Knight</td>
+                <td>Hulk</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Gabriel Alves</td>
+                <td>The Vampire Diaries</td>
+                <td>SuperNatural</td>
+                <td>Dark</td>
+
+            </tr>
+
+            <tr>
+                <td>Apolo Alves</td>
+                <td>Tete</td>
+                <td>Dormir</td>
+                <td>Sorrir</td>
+            </tr>
+
+                <tr>
+                    <td>Bruno Grau</td>
+                    <td>Dark</td>
+                    <td>Moon Knight</td>
+                    <td>Originals</td>
+
+                </tr>
          </tbody>
     </table>
 </body>
