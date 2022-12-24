@@ -20,6 +20,8 @@
         td, th {
             border: 1px solid black;
             padding: 10px;
+            text-align: left;
+            
         }
     </style>
 </head>
@@ -27,13 +29,17 @@
     <table>
             <thead>
 
-                <th>Área</th>
-                <th >Disciplinas</th>
-                <th colspan="">Notas </th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Média</th>
-                
+             <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas </th>
+                <th rowspan="2">Média</th>     
+            </tr>
+
+             <tr>
+                <td>Nota 1</td>
+                <td>Nota 2</td>
+             </tr>
 
             </thead>
             <tr>
@@ -42,7 +48,7 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td>0</td>
+               
             </tr>
 
             <tr>
@@ -50,7 +56,7 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td>0</td>
+                
             </tr>
 
             <tr>
@@ -58,7 +64,7 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td>0</td>
+               
             </tr>
             
             <tr>    
@@ -66,14 +72,39 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td>0</td>          
+                         
             </tr>
             
             <tr>
-                <th colspan=""> Média de Exatas</th>
+                <th colspan="4"> Média de Exatas</th>
                 <td>0</td>
 
             </tr>
+            
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>     
+                </tr>
+
+                <tr>
+                    <td>Geografia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <th colspan="4">Média de Humanas</th>
+                    <td>0</td>
+                </tr>
+
+
+
+
+
     </tbody>
 
     </table>
