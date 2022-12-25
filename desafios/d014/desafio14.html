@@ -27,7 +27,7 @@
         }
 
         thead:nth-child(odd) {
-            background-color: cornflowerblue;
+            background-color: rgb(37, 41, 32);
             color: white;
 
         }
@@ -37,16 +37,17 @@
 
         }
 
-        tbody > tr:nth-child(2n) {
-            background-color: aqua ;
+        tbody > tr:nth-child(5n) {
+            background-color: rgb(37, 41, 32);
+            color: white;
         }
        
-       tbody > tr > th:nth-child(even) {
-            background-color: aliceblue;
-       }
+        tbody > tr.zebra:nth-child(even) {
+            background-color: rgb(37, 41, 32);
+            color: white;
 
-
-    
+        }
+       
     </style>
 </head>
 <body>
@@ -54,15 +55,15 @@
         <thead>
 
              <tr>
-                <th rowspan="2" class="c">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2" class="c">Notas </th>
-                <th rowspan="2">Média</th>     
+                <th rowspan="2" class="c" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" class="c" scope="colgroup">Notas </th>
+                <th rowspan="2" scope="colgroup">Média</th>     
             </tr>
 
              <tr>
-                <td>Nota 1</td>
-                <td>Nota 2</td>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</t>
              </tr>
 
         </thead>
@@ -70,7 +71,7 @@
         
         <tbody>
                 <tr>
-                    <th rowspan="4" class="c">Exatas</th>
+                    <th rowspan="4" class="c" scope="rowgroup">Exatas</th>
                     <td>Matemática</td>
                     <td>0</td>
                     <td>0</td>
@@ -101,12 +102,12 @@
                 </tr>
                 
                 <tr>
-                    <th colspan="4" class="des"> Média de Exatas</th>
+                    <th colspan="4" scope="row"> Média de Exatas</th>
                     <td>0</td>
                 </tr>
                 
                     <tr>
-                        <th rowspan="2">Humanas</th>
+                        <th rowspan="2" scope="rowgroup">Humanas</th>
                         <td>História</td>
                         <td>0</td>
                         <td>0</td>
@@ -118,9 +119,9 @@
                         <td>0</td>
                         <td>0</td>
                     </tr>
-                    <tr>
-                        <th colspan="4">Média de Humanas</th>
-                        <td class="">0</td>
+                    <tr class="zebra">
+                        <th colspan="4" scope="row">Média de Humanas</th>
+                        <td>0</td>
                     </tr>
             </tbody>
 
